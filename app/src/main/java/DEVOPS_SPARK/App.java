@@ -14,7 +14,7 @@ public class App {
     public static void main(String[] args) {
         fruits.add(new Fruit("Apfel"));
         fruits.add(new Fruit("Birne"));
-        fruits.add(new Fruit("Banane"));
+        fruits.add(new Fruit("Oli Banane"));
 
         Spark.get("/fruits/:id/liste", (req, res) -> {
             String idString = req.params("id");
