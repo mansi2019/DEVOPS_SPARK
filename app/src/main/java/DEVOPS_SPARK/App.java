@@ -34,6 +34,13 @@ public class App {
             int id = Integer.parseInt(idString);
             fruits.get(id).count();
             return "ok";});
+
+        // Delete list
+        Spark.delete("/fruits/:id", (req, res) -> {
+            String idString = req.params("id");
+            int id = Integer.parseInt(idString);
+            fruits.delete(id);
+            return "ok";});
                            
     
     }
